@@ -75,14 +75,8 @@
             animation: floatIn 0.6s ease-out;
         }
         @keyframes floatIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.96);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+            from { opacity: 0; transform: translateY(30px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
         }
         .login-logo {
             font-size: 56px;
@@ -91,22 +85,11 @@
             display: inline-block;
         }
         @keyframes bounce {
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-            30% {
-                transform: translateY(-16px);
-            }
-            50% {
-                transform: translateY(0);
-            }
-            70% {
-                transform: translateY(-8px);
-            }
-            85% {
-                transform: translateY(0);
-            }
+            0%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-16px); }
+            50% { transform: translateY(0); }
+            70% { transform: translateY(-8px); }
+            85% { transform: translateY(0); }
         }
         .login-title {
             font-size: 26px;
@@ -191,14 +174,8 @@
             box-shadow: 0 6px 24px rgba(232, 152, 62, 0.4);
             transform: translateY(-1px);
         }
-        .btn-primary:active {
-            transform: scale(0.97);
-        }
-        .btn-sm {
-            padding: 8px 16px;
-            font-size: 13px;
-            border-radius: 30px;
-        }
+        .btn-primary:active { transform: scale(0.97); }
+        .btn-sm { padding: 8px 16px; font-size: 13px; border-radius: 30px; }
         .btn-outline {
             background: transparent;
             border: 2px solid var(--border);
@@ -281,9 +258,7 @@
             font-size: 20px;
             letter-spacing: -0.3px;
         }
-        .app-brand .emoji {
-            font-size: 30px;
-        }
+        .app-brand .emoji { font-size: 30px; }
         .app-user {
             display: flex;
             align-items: center;
@@ -393,10 +368,7 @@
             border-color: #f0dcc8;
             box-shadow: 0 4px 16px rgba(120, 80, 40, 0.06);
         }
-        .life-card .avatar {
-            font-size: 36px;
-            margin-bottom: 6px;
-        }
+        .life-card .avatar { font-size: 36px; margin-bottom: 6px; }
         .life-card .name {
             font-weight: 700;
             font-size: 14px;
@@ -410,12 +382,8 @@
             letter-spacing: -1px;
             transition: var(--transition);
         }
-        .life-card .lives-count.low {
-            color: var(--danger);
-        }
-        .life-card .lives-count.high {
-            color: var(--success);
-        }
+        .life-card .lives-count.low { color: var(--danger); }
+        .life-card .lives-count.high { color: var(--success); }
         .admin-controls {
             display: flex;
             align-items: center;
@@ -546,12 +514,8 @@
             animation: fadeIn 0.2s ease;
         }
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         .modal {
             background: #fff;
@@ -582,9 +546,7 @@
             outline: none;
             resize: vertical;
         }
-        .modal textarea {
-            min-height: 100px;
-        }
+        .modal textarea { min-height: 100px; }
         .modal input:focus,
         .modal textarea:focus {
             border-color: var(--primary);
@@ -608,9 +570,7 @@
             font-size: 14px;
             transition: var(--transition);
         }
-        .btn-cancel:hover {
-            background: #f5f0ea;
-        }
+        .btn-cancel:hover { background: #f5f0ea; }
         .btn-save {
             background: var(--primary);
             color: #fff;
@@ -641,9 +601,7 @@
             transition: var(--transition);
             margin-right: auto;
         }
-        .btn-delete-modal:hover {
-            background: var(--danger-hover);
-        }
+        .btn-delete-modal:hover { background: var(--danger-hover); }
 
         /* ── Toast ── */
         .toast {
@@ -663,20 +621,11 @@
             pointer-events: none;
         }
         @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateX(-50%) translateY(-40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(-50%) translateY(0);
-            }
+            from { opacity: 0; transform: translateX(-50%) translateY(-40px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
         @keyframes fadeOut {
-            to {
-                opacity: 0;
-                transform: translateX(-50%) translateY(-20px);
-            }
+            to { opacity: 0; transform: translateX(-50%) translateY(-20px); }
         }
 
         /* ── Personal Cabinet ── */
@@ -684,10 +633,7 @@
             text-align: center;
             padding: 30px 20px;
         }
-        .cabinet-avatar {
-            font-size: 70px;
-            margin-bottom: 8px;
-        }
+        .cabinet-avatar { font-size: 70px; margin-bottom: 8px; }
         .cabinet-name {
             font-size: 22px;
             font-weight: 800;
@@ -701,12 +647,8 @@
             margin: 8px 0;
             transition: var(--transition);
         }
-        .cabinet-lives.low {
-            color: var(--danger);
-        }
-        .cabinet-lives.high {
-            color: var(--success);
-        }
+        .cabinet-lives.low { color: var(--danger); }
+        .cabinet-lives.high { color: var(--success); }
         .cabinet-message {
             font-size: 15px;
             color: var(--text-light);
@@ -715,45 +657,18 @@
 
         /* ── Responsive ── */
         @media (max-width: 500px) {
-            .lives-grid {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-                gap: 8px;
-            }
-            .life-card {
-                padding: 14px 8px;
-            }
-            .life-card .lives-count {
-                font-size: 28px;
-            }
-            .life-card .avatar {
-                font-size: 26px;
-            }
-            .app-header {
-                padding: 14px 16px;
-                font-size: 16px;
-            }
-            .app-brand {
-                font-size: 17px;
-            }
-            .nav-tab {
-                padding: 9px 14px;
-                font-size: 12px;
-            }
-            .content-area {
-                padding: 16px;
-            }
-            .login-card {
-                padding: 28px 18px 22px;
-            }
-            .login-title {
-                font-size: 22px;
-            }
-            .cabinet-lives {
-                font-size: 48px;
-            }
-            .cabinet-avatar {
-                font-size: 50px;
-            }
+            .lives-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+            .life-card { padding: 14px 8px; }
+            .life-card .lives-count { font-size: 28px; }
+            .life-card .avatar { font-size: 26px; }
+            .app-header { padding: 14px 16px; font-size: 16px; }
+            .app-brand { font-size: 17px; }
+            .nav-tab { padding: 9px 14px; font-size: 12px; }
+            .content-area { padding: 16px; }
+            .login-card { padding: 28px 18px 22px; }
+            .login-title { font-size: 22px; }
+            .cabinet-lives { font-size: 48px; }
+            .cabinet-avatar { font-size: 50px; }
         }
     </style>
 </head>
@@ -781,7 +696,6 @@
 
     <!-- ═══════════ MAIN APP ═══════════ -->
     <div class="app-container" id="appContainer">
-        <!-- Header -->
         <div class="app-header">
             <div class="app-brand">
                 <span class="emoji">🦆🐦</span> Гусяси Воробейчики
@@ -793,7 +707,6 @@
             </div>
         </div>
 
-        <!-- Nav Tabs -->
         <div class="nav-tabs" id="navTabs">
             <button class="nav-tab active" data-tab="lives">❤️ Жизни</button>
             <button class="nav-tab" data-tab="news">📰 Новости</button>
@@ -801,16 +714,13 @@
             <button class="nav-tab" data-tab="admin" id="tabAdmin" style="display:none;">⚙️ Админ-панель</button>
         </div>
 
-        <!-- Content -->
         <div class="content-area" id="contentArea"></div>
     </div>
 
-    <!-- ═══════════ MODAL ═══════════ -->
     <div class="modal-overlay" id="modalOverlay" style="display:none;">
         <div class="modal" id="modalBox"></div>
     </div>
 
-    <!-- ═══════════ TOAST CONTAINER ═══════════ -->
     <div id="toastContainer"></div>
 
     <script>
@@ -818,14 +728,10 @@
             // ──────────────────────────────────────
             //  КОНФИГУРАЦИЯ
             // ──────────────────────────────────────
-            const API_BASE = "https://dbgusvor.onrender.com";  // ← замени на свой URL после деплоя
-            // Для локальной разработки: "http://localhost:5000"
-
-            // ──────────────────────────────────────
-            //  APP STATE
-            // ──────────────────────────────────────
-            let appData = { users: [], news: [] };  // кэш с сервера
+            const API_BASE = "";  // бекенд на том же домене
+            let appData = { users: [], news: [] };
             let currentUser = null;
+            let csrfToken = localStorage.getItem('csrf_token') || null;
             let activeTab = 'lives';
 
             // DOM REFS
@@ -846,19 +752,26 @@
             const btnLogout = document.getElementById('btnLogout');
 
             // ──────────────────────────────────────
-            //  API HELPERS
+            //  API FETCH (куки + CSRF)
             // ──────────────────────────────────────
             async function apiFetch(url, options = {}) {
                 const headers = {
                     'Content-Type': 'application/json',
-                    ...(currentUser ? { 'X-Auth-Name': encodeURIComponent(currentUser.name) } : {})
                 };
-                const res = await fetch(API_BASE + url, { ...options, headers: { ...headers, ...options.headers } });
+                // Добавляем CSRF-токен для мутирующих методов
+                if (options.method && options.method !== 'GET' && csrfToken) {
+                    headers['X-CSRF-Token'] = csrfToken;
+                }
+                const res = await fetch(API_BASE + url, {
+                    ...options,
+                    headers: { ...headers, ...options.headers },
+                    credentials: 'same-origin'  // куки отправляются только на наш домен
+                });
                 if (!res.ok) {
                     const err = await res.json().catch(() => ({ error: 'Ошибка сети' }));
                     throw new Error(err.error || `Ошибка ${res.status}`);
                 }
-            return res.json();
+                return res.json();
             }
 
             // ──────────────────────────────────────
@@ -873,7 +786,7 @@
             }
 
             // ──────────────────────────────────────
-            //  LOAD DATA FROM SERVER
+            //  ЗАГРУЗКА ДАННЫХ
             // ──────────────────────────────────────
             async function refreshData() {
                 try {
@@ -890,7 +803,7 @@
             }
 
             // ──────────────────────────────────────
-            //  AUTH
+            //  АВТОРИЗАЦИЯ (теперь кука + csrf)
             // ──────────────────────────────────────
             async function handleLogin() {
                 const name = loginSelect.value;
@@ -907,6 +820,11 @@
                         method: 'POST',
                         body: JSON.stringify({ name, password })
                     });
+                    // сохраняем CSRF-токен
+                    if (user.csrf_token) {
+                        csrfToken = user.csrf_token;
+                        localStorage.setItem('csrf_token', csrfToken);
+                    }
                     currentUser = user;
                     loginOverlay.classList.add('hidden');
                     appContainer.classList.add('visible');
@@ -931,7 +849,16 @@
                 }
             }
 
-            function handleLogout() {
+            // ──────────────────────────────────────
+            //  ВЫХОД
+            // ──────────────────────────────────────
+            async function handleLogout() {
+                try {
+                    await apiFetch('/api/logout', { method: 'POST' });
+                } catch (e) {}
+                // очищаем всё
+                csrfToken = null;
+                localStorage.removeItem('csrf_token');
                 currentUser = null;
                 appContainer.classList.remove('visible');
                 loginOverlay.classList.remove('hidden');
@@ -951,7 +878,28 @@
             btnLogout.addEventListener('click', handleLogout);
 
             // ──────────────────────────────────────
-            //  NAVIGATION
+            //  ВОССТАНОВЛЕНИЕ СЕССИИ (если кука есть)
+            // ──────────────────────────────────────
+            async function tryRestoreSession() {
+                try {
+                    const me = await apiFetch('/api/me');
+                    currentUser = me;
+                    appContainer.classList.add('visible');
+                    loginOverlay.classList.add('hidden');
+                    currentUserName.textContent = me.name;
+                    if (me.isAdmin) {
+                        adminBadge.style.display = 'inline-block';
+                        tabAdmin.style.display = 'inline-block';
+                    }
+                    await refreshData();
+                    renderContent();
+                } catch (e) {
+                    // нет сессии – остаёмся на логине
+                }
+            }
+
+            // ──────────────────────────────────────
+            //  НАВИГАЦИЯ
             // ──────────────────────────────────────
             function updateNavTabs() {
                 const tabs = navTabs.querySelectorAll('.nav-tab');
@@ -971,87 +919,64 @@
             });
 
             // ──────────────────────────────────────
-            //  RENDER CONTENT
+            //  РЕНДЕР (аналогично предыдущим версиям, но без корон)
             // ──────────────────────────────────────
             function renderContent() {
                 if (!currentUser) return;
                 switch (activeTab) {
-                    case 'lives':
-                        renderLives();
-                        break;
-                    case 'news':
-                        renderNews();
-                        break;
-                    case 'cabinet':
-                        renderCabinet();
-                        break;
-                    case 'admin':
-                        renderAdmin();
-                        break;
-                    default:
-                        renderLives();
+                    case 'lives': renderLives(); break;
+                    case 'news': renderNews(); break;
+                    case 'cabinet': renderCabinet(); break;
+                    case 'admin': renderAdmin(); break;
                 }
             }
 
             function renderLives() {
                 const users = appData.users;
-                let html = '<div class="section-title">❤️ Жизни участников</div>';
-                html += '<div class="lives-grid">';
+                let html = '<div class="section-title">❤️ Жизни участников</div><div class="lives-grid">';
                 users.forEach(user => {
                     const livesClass = user.lives <= 1 ? 'low' : (user.lives >= 6 ? 'high' : '');
-                    html += `
-                <div class="life-card">
-                  <div class="avatar">${user.avatar}</div>
-                  <div class="name">${escapeHtml(user.name)}${user.isAdmin ? ' ☕' : ''}</div>
-                  <div class="lives-count ${livesClass}">${user.lives}</div>
-                  ${currentUser.isAdmin ? `
-                  <div class="admin-controls">
-                    <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', -1)">−</button>
-                    <input type="number" class="admin-input" value="${user.lives}" 
-                           onchange="window._adminSetLives('${user.name}', this.value)" 
-                           onfocus="this.select()" min="0" max="99">
-                    <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', 1)">+</button>
-                  </div>` : ''}
-                </div>`;
+                    html += `<div class="life-card">
+                        <div class="avatar">${user.avatar}</div>
+                        <div class="name">${escapeHtml(user.name)}${user.isAdmin ? ' (Админ)' : ''}</div>
+                        <div class="lives-count ${livesClass}">${user.lives}</div>
+                        ${currentUser.isAdmin ? `
+                        <div class="admin-controls">
+                            <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', -1)">−</button>
+                            <input type="number" class="admin-input" value="${user.lives}" 
+                                   onchange="window._adminSetLives('${user.name}', this.value)" 
+                                   onfocus="this.select()" min="0" max="99">
+                            <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', 1)">+</button>
+                        </div>` : ''}
+                    </div>`;
                 });
                 html += '</div>';
-                if (currentUser.isAdmin) {
-                    html +=
-                        '<p style="margin-top:14px;font-size:12px;color:#b0a090;">💡 Ты админ — можешь менять жизни кнопками или вводом</p>';
-                }
+                if (currentUser.isAdmin) html += '<p style="margin-top:14px;font-size:12px;color:#b0a090;">💡 Ты админ — меняй жизни кнопками или вводом</p>';
                 contentArea.innerHTML = html;
             }
 
             function renderNews() {
                 const news = [...appData.news].sort((a, b) => new Date(b.date) - new Date(a.date));
                 let html = '<div class="section-title">📰 Новости</div>';
-                html +=
-                    '<button class="btn-add-news" onclick="window._openNewsModal()">➕ Добавить новость</button>';
+                html += '<button class="btn-add-news" onclick="window._openNewsModal()">➕ Добавить новость</button>';
                 if (news.length === 0) {
                     html += '<div class="no-data">Пока новостей нет. Добавь первую! 🐣</div>';
                 } else {
                     html += '<div class="news-list">';
                     news.forEach(item => {
-                        const dateStr = new Date(item.date).toLocaleDateString('ru-RU', {
-                            day: 'numeric',
-                            month: 'long',
-                            year: 'numeric',
-                            hour: '2-digit',
-                            minute: '2-digit'
-                        });
-                        html += `
-                  <div class="news-card">
-                    <div class="news-title">📌 ${escapeHtml(item.title)}</div>
-                    <div class="news-content">${escapeHtml(item.content)}</div>
-                    <div class="news-meta">
-                      <span>👤 ${escapeHtml(item.author)}</span>
-                      <span>🕒 ${dateStr}</span>
-                    </div>
-                    <div class="news-actions">
-                      <button class="btn-edit-sm" onclick="window._openNewsModal(${item.id})">✏️ Редактировать</button>
-                      <button class="btn-danger-sm" onclick="window._deleteNews(${item.id})">🗑️ Удалить</button>
-                    </div>
-                  </div>`;
+                        const dateStr = new Date(item.date).toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+                        html += `<div class="news-card">
+                            <div class="news-title">📌 ${escapeHtml(item.title)}</div>
+                            <div class="news-content">${escapeHtml(item.content)}</div>
+                            <div class="news-meta">
+                                <span>👤 ${escapeHtml(item.author)}</span>
+                                <span>🕒 ${dateStr}</span>
+                            </div>
+                            <div class="news-actions">
+                                <button class="btn-edit-sm" onclick="window._openNewsModal(${item.id})">✏️</button>
+                                <button class="btn-danger-sm" onclick="window._deleteNews(${item.id})">🗑️</button>
+                            </div>
+                        </div>`;
                     });
                     html += '</div>';
                 }
@@ -1067,228 +992,160 @@
                 else if (user.lives >= 2) message = '🙂 Нормально, стабильность — признак мастерства.';
                 else if (user.lives >= 1) message = '😬 Осторожно! Жизни на исходе...';
                 else message = '💀 Берегись! Жизней нет... но ты всё ещё в игре!';
-
-                let html = `
-              <div class="cabinet-card">
-                <div class="cabinet-avatar">${user.avatar}</div>
-                <div class="cabinet-name">${escapeHtml(user.name)}${user.isAdmin ? ' ☕' : ''}</div>
-                <div class="cabinet-lives ${livesClass}">${user.lives}</div>
-                <div style="font-size:13px;color:#b0a090;margin-bottom:6px;">жизней</div>
-                <div class="cabinet-message">${message}</div>
-                ${user.isAdmin ? '<p style="margin-top:16px;font-size:12px;color:#c47a2a;">⚙️ У тебя админ-доступ — можешь управлять всем</p>' : ''}
-              </div>`;
+                let html = `<div class="cabinet-card">
+                    <div class="cabinet-avatar">${user.avatar}</div>
+                    <div class="cabinet-name">${escapeHtml(user.name)}${user.isAdmin ? ' (Админ)' : ''}</div>
+                    <div class="cabinet-lives ${livesClass}">${user.lives}</div>
+                    <div style="font-size:13px;color:#b0a090;">жизней</div>
+                    <div class="cabinet-message">${message}</div>
+                    ${user.isAdmin ? '<p style="margin-top:16px;font-size:12px;color:#c47a2a;">⚙️ Админ-доступ</p>' : ''}
+                </div>`;
                 contentArea.innerHTML = html;
             }
 
             function renderAdmin() {
-                if (!currentUser?.isAdmin) {
-                    activeTab = 'lives';
-                    updateNavTabs();
-                    renderLives();
+                if (!currentUser?.isAdmin) { activeTab = 'lives'; updateNavTabs(); renderLives(); return; }
+                const users = appData.users;
+                if (!users || users.length === 0) {
+                    contentArea.innerHTML = '<div class="no-data">Список участников не загружен. <button onclick="refreshData().then(()=>renderContent())">Попробовать снова</button></div>';
                     return;
                 }
-                const users = appData.users;
                 let html = '<div class="section-title">⚙️ Админ-панель</div>';
-                html +=
-                    '<p style="font-size:13px;color:#b0a090;margin-bottom:16px;">Управляй жизнями всех участников</p>';
                 html += '<div style="display:flex;flex-direction:column;gap:10px;">';
                 users.forEach(user => {
-                    html += `
-                <div style="display:flex;align-items:center;justify-content:space-between;background:#fefaf5;border-radius:12px;padding:12px 16px;gap:10px;flex-wrap:wrap;">
-                  <span style="font-weight:700;font-size:15px;">${user.avatar} ${escapeHtml(user.name)}${user.isAdmin ? ' ☕' : ''}</span>
-                  <div style="display:flex;align-items:center;gap:8px;">
-                    <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', -1)">−</button>
-                    <span style="font-weight:900;font-size:20px;min-width:30px;text-align:center;color:${user.lives <= 1 ? 'var(--danger)' : (user.lives >= 6 ? 'var(--success)' : 'var(--primary-dark)')};">${user.lives}</span>
-                    <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', 1)">+</button>
-                    <input type="number" class="admin-input" value="${user.lives}" 
-                           onchange="window._adminSetLives('${user.name}', this.value)" 
-                           onfocus="this.select()" min="0" max="99" style="width:50px;" title="Установить точно">
-                  </div>
-                </div>`;
+                    html += `<div style="display:flex;align-items:center;justify-content:space-between;background:#fefaf5;border-radius:12px;padding:12px 16px;">
+                        <span style="font-weight:700;">${user.avatar} ${escapeHtml(user.name)}${user.isAdmin ? ' (Админ)' : ''}</span>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', -1)">−</button>
+                            <span style="font-weight:900;font-size:20px;color:${user.lives <= 1 ? 'var(--danger)' : (user.lives >= 6 ? 'var(--success)' : 'var(--primary-dark)')};">${user.lives}</span>
+                            <button class="admin-btn" onclick="window._adminChangeLives('${user.name}', 1)">+</button>
+                            <input type="number" class="admin-input" value="${user.lives}" 
+                                   onchange="window._adminSetLives('${user.name}', this.value)" 
+                                   onfocus="this.select()" min="0" max="99" style="width:50px;">
+                        </div>
+                    </div>`;
                 });
                 html += '</div>';
                 contentArea.innerHTML = html;
             }
 
             // ──────────────────────────────────────
-            //  ADMIN ACTIONS (через API)
+            //  АДМИН-ДЕЙСТВИЯ (теперь с CSRF)
             // ──────────────────────────────────────
             window._adminChangeLives = async function(name, delta) {
                 if (!currentUser?.isAdmin) return;
                 try {
-                    const res = await apiFetch(`/api/lives/${name}`, {
-                        method: 'PATCH',
-                        body: JSON.stringify({ delta })
-                    });
+                    const res = await apiFetch(`/api/lives/${name}`, { method: 'PATCH', body: JSON.stringify({ delta }) });
                     await refreshData();
                     renderContent();
-                    showToast(`${delta > 0 ? '+' : ''}${delta} жизнь — ${name} (${res.lives})`);
-                } catch (e) {
-                    showToast('❌ ' + e.message);
-                }
+                    showToast(`${delta>0?'+':''}${delta} жизнь — ${name} (${res.lives})`);
+                } catch (e) { showToast('❌ ' + e.message); }
             };
             window._adminSetLives = async function(name, value) {
                 if (!currentUser?.isAdmin) return;
                 const lives = parseInt(value, 10);
                 if (isNaN(lives) || lives < 0) return;
                 try {
-                    await apiFetch(`/api/lives/${name}`, {
-                        method: 'PATCH',
-                        body: JSON.stringify({ lives })
-                    });
+                    await apiFetch(`/api/lives/${name}`, { method: 'PATCH', body: JSON.stringify({ lives }) });
                     await refreshData();
                     renderContent();
                     showToast(`🎯 Жизни ${name} установлены на ${lives}`);
-                } catch (e) {
-                    showToast('❌ ' + e.message);
-                }
+                } catch (e) { showToast('❌ ' + e.message); }
             };
 
             // ──────────────────────────────────────
-            //  NEWS ACTIONS (через API)
+            //  НОВОСТИ (CSRF защита)
             // ──────────────────────────────────────
             window._openNewsModal = function(newsId = null) {
                 const existing = newsId ? appData.news.find(n => n.id === newsId) : null;
                 const isEdit = !!existing;
-
-                let modalHTML = `
-              <h3>${isEdit ? '✏️ Редактировать новость' : '➕ Новая новость'}</h3>
-              <input type="text" id="modalNewsTitle" placeholder="Заголовок" value="${isEdit ? escapeAttr(existing.title) : ''}" maxlength="100">
-              <textarea id="modalNewsContent" placeholder="Текст новости...">${isEdit ? escapeHtml(existing.content) : ''}</textarea>
-              <div class="modal-buttons">
-                ${isEdit ? '<button class="btn-delete-modal" id="btnModalDelete">🗑️ Удалить</button>' : ''}
-                <button class="btn-cancel" id="btnModalCancel">Отмена</button>
-                <button class="btn-save" id="btnModalSave">${isEdit ? '💾 Сохранить' : '📢 Опубликовать'}</button>
-              </div>`;
+                let modalHTML = `<h3>${isEdit ? '✏️ Редактировать' : '➕ Новая новость'}</h3>
+                    <input type="text" id="modalNewsTitle" placeholder="Заголовок" value="${isEdit ? escapeAttr(existing.title) : ''}" maxlength="100">
+                    <textarea id="modalNewsContent" placeholder="Текст...">${isEdit ? escapeHtml(existing.content) : ''}</textarea>
+                    <div class="modal-buttons">
+                        ${isEdit ? '<button class="btn-delete-modal" id="btnModalDelete">🗑️ Удалить</button>' : ''}
+                        <button class="btn-cancel" id="btnModalCancel">Отмена</button>
+                        <button class="btn-save" id="btnModalSave">${isEdit ? '💾 Сохранить' : '📢 Опубликовать'}</button>
+                    </div>`;
                 modalBox.innerHTML = modalHTML;
                 modalOverlay.style.display = 'flex';
 
                 const closeModal = () => { modalOverlay.style.display = 'none'; };
-
                 document.getElementById('btnModalCancel').addEventListener('click', closeModal);
-                modalOverlay.addEventListener('click', (e) => {
-                    if (e.target === modalOverlay) closeModal();
-                });
+                modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
 
                 document.getElementById('btnModalSave').addEventListener('click', async () => {
                     const title = document.getElementById('modalNewsTitle').value.trim();
                     const content = document.getElementById('modalNewsContent').value.trim();
-                    if (!title || !content) {
-                        showToast('⚠️ Заполни заголовок и текст!');
-                        return;
-                    }
+                    if (!title || !content) { showToast('⚠️ Заполни оба поля!'); return; }
                     try {
                         if (isEdit) {
-                            await apiFetch(`/api/news/${newsId}`, {
-                                method: 'PUT',
-                                body: JSON.stringify({ title, content })
-                            });
+                            await apiFetch(`/api/news/${newsId}`, { method: 'PUT', body: JSON.stringify({ title, content }) });
                         } else {
-                            await apiFetch('/api/news', {
-                                method: 'POST',
-                                body: JSON.stringify({ title, content })
-                            });
+                            await apiFetch('/api/news', { method: 'POST', body: JSON.stringify({ title, content }) });
                         }
                         await refreshData();
                         closeModal();
                         if (activeTab === 'news') renderNews();
-                        showToast(isEdit ? '✅ Новость обновлена!' : '📢 Новость опубликована!');
-                    } catch (e) {
-                        showToast('❌ ' + e.message);
-                    }
+                        showToast(isEdit ? '✅ Обновлено!' : '📢 Опубликовано!');
+                    } catch (e) { showToast('❌ ' + e.message); }
                 });
 
                 if (isEdit) {
                     document.getElementById('btnModalDelete').addEventListener('click', async () => {
-                        if (!confirm('Точно удалить эту новость?')) return;
+                        if (!confirm('Точно удалить?')) return;
                         try {
                             await apiFetch(`/api/news/${newsId}`, { method: 'DELETE' });
                             await refreshData();
                             closeModal();
                             if (activeTab === 'news') renderNews();
-                            showToast('🗑️ Новость удалена');
-                        } catch (e) {
-                            showToast('❌ ' + e.message);
-                        }
+                            showToast('🗑️ Удалено');
+                        } catch (e) { showToast('❌ ' + e.message); }
                     });
                 }
-
-                setTimeout(() => {
-                    const titleInput = document.getElementById('modalNewsTitle');
-                    if (titleInput) titleInput.focus();
-                }, 150);
+                setTimeout(() => { const inp = document.getElementById('modalNewsTitle'); if (inp) inp.focus(); }, 150);
             };
 
             window._deleteNews = async function(newsId) {
-                if (!confirm('Точно удалить эту новость?')) return;
+                if (!confirm('Точно удалить?')) return;
                 try {
                     await apiFetch(`/api/news/${newsId}`, { method: 'DELETE' });
                     await refreshData();
                     if (activeTab === 'news') renderNews();
-                    showToast('🗑️ Новость удалена');
-                } catch (e) {
-                    showToast('❌ ' + e.message);
-                }
+                    showToast('🗑️ Удалено');
+                } catch (e) { showToast('❌ ' + e.message); }
             };
 
             // ──────────────────────────────────────
-            //  ESCAPE HELPERS
+            //  HELPERS
             // ──────────────────────────────────────
             function escapeHtml(str) {
                 const div = document.createElement('div');
                 div.textContent = str;
                 return div.innerHTML;
             }
-
             function escapeAttr(str) {
-                return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g,
-                '&gt;');
+                return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
             }
 
-            // ──────────────────────────────────────
-            //  KEYBOARD SHORTCUTS
-            // ──────────────────────────────────────
+            // Горячие клавиши
             document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    if (modalOverlay.style.display === 'flex') {
-                        modalOverlay.style.display = 'none';
-                    }
-                }
+                if (e.key === 'Escape' && modalOverlay.style.display === 'flex') modalOverlay.style.display = 'none';
                 if (e.ctrlKey && !e.metaKey && currentUser) {
                     const tabMap = { '1': 'lives', '2': 'news', '3': 'cabinet', '4': 'admin' };
                     const tab = tabMap[e.key];
                     if (tab === 'admin' && !currentUser.isAdmin) return;
-                    if (tab) {
-                        e.preventDefault();
-                        activeTab = tab;
-                        updateNavTabs();
-                        renderContent();
-                    }
+                    if (tab) { e.preventDefault(); activeTab = tab; updateNavTabs(); renderContent(); }
                 }
             });
 
             // ──────────────────────────────────────
-            //  INITIAL SETUP
+            //  ИНИЦИАЛИЗАЦИЯ
             // ──────────────────────────────────────
             async function init() {
-                try {
-                    // Загружаем список пользователей с сервера для выпадающего списка
-                    const users = await apiFetch('/api/lives');
-                    loginSelect.innerHTML = '<option value="">— выбери себя —</option>';
-                    users.forEach(u => {
-                        const opt = document.createElement('option');
-                        opt.value = u.name;
-                        opt.textContent = u.name + (u.isAdmin ? ' ☕' : '');
-                        loginSelect.appendChild(opt);
-                    });
-                } catch (e) {
-                    // fallback – если сервер недоступен, но это не критично
-                    console.warn('Не удалось загрузить пользователей для входа');
-                }
-                // Убеждаемся, что экран логина показан, а приложение скрыто
-                appContainer.classList.remove('visible');
-                loginOverlay.classList.remove('hidden');
-                modalOverlay.style.display = 'none';
+                // Попытка восстановить сессию по куке
+                await tryRestoreSession();
+                // Если сессии нет – оставляем экран логина
             }
 
             init();
